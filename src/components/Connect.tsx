@@ -5,9 +5,9 @@ export default function ConnectButton() {
   const modal = useWeb3Modal()
 
   return (
-    <>
+    <div className='container'>
       <button onClick={() => modal.open()}>Open Connect Modal</button>
       <button onClick={() => modal.open({ view: 'Networks' })}>Open Network Modal</button>
-    </>
+    </div>
   )
 }
