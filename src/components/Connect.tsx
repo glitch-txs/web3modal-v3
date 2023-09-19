@@ -3,7 +3,7 @@ import { useWeb3ModalState } from '@web3modal/wagmi/react'
 export default function ConnectButton() {
 
   const { open, selectedNetworkId } = useWeb3ModalState()
-  //console.log(open, selectedNetworkId)
+  console.log(open, selectedNetworkId)
 
   return (
     <div className='container'>
