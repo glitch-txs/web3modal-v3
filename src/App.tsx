@@ -10,23 +10,23 @@ if (!projectId) {
   throw new Error('VITE_PROJECT_ID is not set')
 }
 
+const metadata = {
+  name: 'Web3Modal',
+  description: 'Web3Modal Example',
+  url: 'https://web3modal.com',
+  icons: ['https://avatars.githubusercontent.com/u/37784886']
+}
+
 // 2. Create wagmiConfig
 const chains = [mainnet, arbitrum, goerli]
-const wagmiConfig = defaultWagmiConfig({ chains, projectId, appName: 'Web3Modal' })
+const wagmiConfig = defaultWagmiConfig({ chains, projectId, metadata })
 
 // 3. Create modal
-const modal = createWeb3Modal({ 
+createWeb3Modal({ 
   wagmiConfig, 
   projectId, 
-  chains, 
-  themeMode:'light',
-  themeVariables:{
-    "--w3m-accent": '#fff',
-  },
-  termsConditionsUrl:"https://www.youtube.com/watch?v=uZcW7G5o6g8",
-  privacyPolicyUrl:"https://www.youtube.com/watch?v=uZcW7G5o6g8",
+  chains,
 })
-modal.subscribeState(console.log)
 
 // 3. Rendering the Page
 export default function App() {
