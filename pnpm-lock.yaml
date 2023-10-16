@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@web3modal/wagmi':
     specifier: ^3.1.0
-    version: 3.1.0(@types/react@18.2.15)(@wagmi/core@1.4.2)(viem@1.16.5)
+    version: 3.1.0(@types/react@18.2.15)(@wagmi/core@1.4.3)(viem@1.16.6)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -15,11 +15,11 @@ dependencies:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
   viem:
-    specifier: ^1.16.5
-    version: 1.16.5(typescript@5.0.2)
+    specifier: ^1.16.6
+    version: 1.16.6(typescript@5.0.2)
   wagmi:
     specifier: ^1.4.3
-    version: 1.4.3(@types/react@18.2.15)(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.2)(viem@1.16.5)
+    version: 1.4.3(@types/react@18.2.15)(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.2)(viem@1.16.6)
 
 devDependencies:
   '@types/react':
@@ -399,10 +399,6 @@ packages:
     resolution: {integrity: sha512-mscwGroSJQrCTjtNGBu+18FQbZYA4+q6Tyx6K7CXHl6AwgZKbWfZYdgP2F+fyZcRUdGRsMX8QtvU61VcGGtO1A==}
     dev: false
 
-  /@lit-labs/ssr-dom-shim@1.1.1:
-    resolution: {integrity: sha512-kXOeFbfCm4fFf2A3WwVEeQj55tMZa8c8/f9AKHMobQMkzNUfUj+antR3fRPaZJawsa1aZiP/Da3ndpZrwEe4rQ==}
-    dev: false
-
   /@lit-labs/ssr-dom-shim@1.1.2:
     resolution: {integrity: sha512-jnOD+/+dSrfTWYfSXBXlo5l5f0q1UuJo3tkbMDCYA2lKUYq79jaxqtGEvnRoh049nt1vdo1+45RinipU6FGY2g==}
     dev: false
@@ -410,7 +406,7 @@ packages:
   /@lit/reactive-element@1.6.3:
     resolution: {integrity: sha512-QuTgnG52Poic7uM1AN5yJ09QMe0O28e10XzSvWDz02TJiiKee4stsiownEIadWm8nYzyDAyT+gKzUoZmiWQtsQ==}
     dependencies:
-      '@lit-labs/ssr-dom-shim': 1.1.1
+      '@lit-labs/ssr-dom-shim': 1.1.2
     dev: false
 
   /@lit/reactive-element@2.0.0:
@@ -544,7 +540,7 @@ packages:
     resolution: {integrity: sha512-gYw0ki/EAuV1oSyMxpqandHjnthZjYYy+YWpTAzf8BqfXM3ItcZLpjxfg+3+mXW8HIO+3jw6T9iiqEXsqHaMMw==}
     dependencies:
       '@safe-global/safe-gateway-typescript-sdk': 3.12.0
-      viem: 1.16.5(typescript@5.0.2)
+      viem: 1.16.6(typescript@5.0.2)
     transitivePeerDependencies:
       - bufferutil
       - typescript
@@ -556,7 +552,7 @@ packages:
     resolution: {integrity: sha512-XJbEPuaVc7b9n23MqlF6c+ToYIS3f7P2Sel8f3cSBQ9WORE4xrSuvhMpK9fDSFqJ7by/brc+rmJR/5HViRr0/w==}
     dependencies:
       '@safe-global/safe-gateway-typescript-sdk': 3.12.0
-      viem: 1.16.5(typescript@5.0.2)
+      viem: 1.16.6(typescript@5.0.2)
     transitivePeerDependencies:
       - bufferutil
       - typescript
@@ -1205,7 +1201,7 @@ packages:
     dev: false
     optional: true
 
-  /@wagmi/connectors@3.1.2(@types/react@18.2.15)(react@18.2.0)(typescript@5.0.2)(viem@1.16.5):
+  /@wagmi/connectors@3.1.2(@types/react@18.2.15)(react@18.2.0)(typescript@5.0.2)(viem@1.16.6):
     resolution: {integrity: sha512-IlLKErqCzQRBUcCvXGPowcczbWcvJtEG006gPsAoePNJEXCHEWoKASghgu+L/bqD7006Z6mW6zlTNjcSQJvFAg==}
     peerDependencies:
       typescript: '>=5.0.4'
@@ -1225,7 +1221,7 @@ packages:
       abitype: 0.8.7(typescript@5.0.2)
       eventemitter3: 4.0.7
       typescript: 5.0.2
-      viem: 1.16.5(typescript@5.0.2)
+      viem: 1.16.6(typescript@5.0.2)
     transitivePeerDependencies:
       - '@react-native-async-storage/async-storage'
       - '@types/react'
@@ -1238,35 +1234,7 @@ packages:
       - zod
     dev: false
 
-  /@wagmi/core@1.4.2(@types/react@18.2.15)(react@18.2.0)(typescript@5.0.2)(viem@1.16.5):
-    resolution: {integrity: sha512-szgNs2DCbBXKsq3wdm/YD8FWkg7lfmTRAv25b2nJYJUTQN59pVXznlWfq8VCJLamhKOYjeYHlTQxXkAeUAJdhw==}
-    peerDependencies:
-      typescript: '>=5.0.4'
-      viem: '>=0.3.35'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@wagmi/connectors': 3.1.2(@types/react@18.2.15)(react@18.2.0)(typescript@5.0.2)(viem@1.16.5)
-      abitype: 0.8.7(typescript@5.0.2)
-      eventemitter3: 4.0.7
-      typescript: 5.0.2
-      viem: 1.16.5(typescript@5.0.2)
-      zustand: 4.4.1(@types/react@18.2.15)(react@18.2.0)
-    transitivePeerDependencies:
-      - '@react-native-async-storage/async-storage'
-      - '@types/react'
-      - bufferutil
-      - encoding
-      - immer
-      - lokijs
-      - react
-      - supports-color
-      - utf-8-validate
-      - zod
-    dev: false
-
-  /@wagmi/core@1.4.3(@types/react@18.2.15)(react@18.2.0)(typescript@5.0.2)(viem@1.16.5):
+  /@wagmi/core@1.4.3(@types/react@18.2.15)(react@18.2.0)(typescript@5.0.2)(viem@1.16.6):
     resolution: {integrity: sha512-CIV9jwv5ue+WpqmA3FvwGa+23cppe7oIaz6TRnlGm0Hm0wDImSaQSWqcsFyOPvleD29oOIJ8e3KnHINEvI64AA==}
     peerDependencies:
       typescript: '>=5.0.4'
@@ -1275,11 +1243,11 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@wagmi/connectors': 3.1.2(@types/react@18.2.15)(react@18.2.0)(typescript@5.0.2)(viem@1.16.5)
+      '@wagmi/connectors': 3.1.2(@types/react@18.2.15)(react@18.2.0)(typescript@5.0.2)(viem@1.16.6)
       abitype: 0.8.7(typescript@5.0.2)
       eventemitter3: 4.0.7
       typescript: 5.0.2
-      viem: 1.16.5(typescript@5.0.2)
+      viem: 1.16.6(typescript@5.0.2)
       zustand: 4.4.1(@types/react@18.2.15)(react@18.2.0)
     transitivePeerDependencies:
       - '@react-native-async-storage/async-storage'
@@ -1703,7 +1671,7 @@ packages:
       qrcode: 1.5.3
     dev: false
 
-  /@web3modal/wagmi@3.1.0(@types/react@18.2.15)(@wagmi/core@1.4.2)(viem@1.16.5):
+  /@web3modal/wagmi@3.1.0(@types/react@18.2.15)(@wagmi/core@1.4.3)(viem@1.16.6):
     resolution: {integrity: sha512-PSzhHtj2GTY+36d6lbfzl4EVeuzA4XcMOW7+/CyLFzUDpG4BI5fsKrDbc7NqZU6L6BjN9dPi/oZO/Q+PM8MrPw==}
     peerDependencies:
       '@wagmi/core': '>=1'
@@ -1716,10 +1684,10 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@wagmi/core': 1.4.2(@types/react@18.2.15)(react@18.2.0)(typescript@5.0.2)(viem@1.16.5)
+      '@wagmi/core': 1.4.3(@types/react@18.2.15)(react@18.2.0)(typescript@5.0.2)(viem@1.16.6)
       '@web3modal/polyfills': 3.1.0
       '@web3modal/scaffold': 3.1.0(@types/react@18.2.15)(react@18.2.0)
-      viem: 1.16.5(typescript@5.0.2)
+      viem: 1.16.6(typescript@5.0.2)
     optionalDependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -2730,7 +2698,7 @@ packages:
   /lit-element@3.3.3:
     resolution: {integrity: sha512-XbeRxmTHubXENkV4h8RIPyr8lXc+Ff28rkcQzw3G6up2xg5E8Zu1IgOWIwBLEQsu3cOVFqdYwiVi0hv0SlpqUA==}
     dependencies:
-      '@lit-labs/ssr-dom-shim': 1.1.1
+      '@lit-labs/ssr-dom-shim': 1.1.2
       '@lit/reactive-element': 1.6.3
       lit-html: 2.8.0
     dev: false
@@ -3491,8 +3459,8 @@ packages:
       use-sync-external-store: 1.2.0(react@18.2.0)
     dev: false
 
-  /viem@1.16.5(typescript@5.0.2):
-    resolution: {integrity: sha512-D8aE6cp/5w6PDtOOkJjkN+FtLyfsNWkfE78N4yTgCt4BG7KsBsePp4O68r1IaTVTVa41anebiZAy9kNEIwAXiw==}
+  /viem@1.16.6(typescript@5.0.2):
+    resolution: {integrity: sha512-jcWcFQ+xzIfDwexwPJRvCuCRJKEkK9iHTStG7mpU5MmuSBpACs4nATBDyXNFtUiyYTFzLlVEwWkt68K0nCSImg==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -3561,7 +3529,7 @@ packages:
     dev: false
     optional: true
 
-  /wagmi@1.4.3(@types/react@18.2.15)(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.2)(viem@1.16.5):
+  /wagmi@1.4.3(@types/react@18.2.15)(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.2)(viem@1.16.6):
     resolution: {integrity: sha512-3LjbqqVRe6WW/WD07QCd5Itmo4nUfLsXuoc8F7nw9NslNUg8SFEb+g/jZ4665V0xh5ZRqPBJ7XOXASpdM2Y/5Q==}
     peerDependencies:
       react: '>=17.0.0'
@@ -3574,12 +3542,12 @@ packages:
       '@tanstack/query-sync-storage-persister': 4.35.3
       '@tanstack/react-query': 4.35.3(react-dom@18.2.0)(react@18.2.0)
       '@tanstack/react-query-persist-client': 4.35.5(@tanstack/react-query@4.35.3)
-      '@wagmi/core': 1.4.3(@types/react@18.2.15)(react@18.2.0)(typescript@5.0.2)(viem@1.16.5)
+      '@wagmi/core': 1.4.3(@types/react@18.2.15)(react@18.2.0)(typescript@5.0.2)(viem@1.16.6)
       abitype: 0.8.7(typescript@5.0.2)
       react: 18.2.0
       typescript: 5.0.2
       use-sync-external-store: 1.2.0(react@18.2.0)
-      viem: 1.16.5(typescript@5.0.2)
+      viem: 1.16.6(typescript@5.0.2)
     transitivePeerDependencies:
       - '@react-native-async-storage/async-storage'
       - '@types/react'
